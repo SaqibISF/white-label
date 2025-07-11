@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@plugin "../hero.ts";
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Base Color: Bright Blue-ish */
+  --heroui-primary: 187 82% 50%; /* Base color for blue */
+
+  /* Lighter Shades */
+  --heroui-primary-50: 187 82% 90%; /* Very light blue */
+  --heroui-primary-100: 187 82% 80%; /* Light blue */
+  --heroui-primary-200: 187 82% 70%; /* Light-medium blue */
+  --heroui-primary-300: 187 82% 60%; /* Medium light blue */
+  --heroui-primary-400: 187 82% 55%; /* Light blue, close to base */
+
+  /* Base Color */
+  --heroui-primary-500: 187 82% 50%; /* Base color */
+
+  /* Darker Shades */
+  --heroui-primary-600: 187 82% 45%; /* Medium blue */
+  --heroui-primary-700: 187 82% 40%; /* Dark blue */
+  --heroui-primary-800: 187 82% 35%; /* Very dark blue */
+  --heroui-primary-900: 187 82% 30%; /* Almost black, very dark blue */
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.woff2") format("woff2"),
+    url("/fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
