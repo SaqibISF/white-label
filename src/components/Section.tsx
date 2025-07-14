@@ -53,7 +53,7 @@ const SectionHeading: FC<ComponentProps<typeof motion.h3>> = ({
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
       className={cn(
-        "sm:text-3xl text-2xl font-bold !leading-[3.5rem] text-center mb-6",
+        "sm:text-4xl text-3xl font-bold !leading-[3.5rem] text-center mb-6",
         className
       )}
       {...props}
@@ -127,7 +127,7 @@ const Section: FC<SectionProps> = ({
         className={cn(
           "container w-full max-w-7xl flex flex-col items-center justify-center text-center",
           isHeroSection
-            ? "p-4 min-h-[calc(100vh-5rem)]"
+            ? "p-4 min-h-[calc(100vh-4rem)]"
             : "px-4 py-12 lg:py-14",
           classNames?.container,
           className
