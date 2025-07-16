@@ -13,3 +13,5 @@ export const FAQs_PAGE_PATH = "/faqs";
 export const LOGIN_PAGE_PATH = "/login";
 
 export const SIGNUP_PAGE_PATH = "/signup";
+
+export const CONTACT_US_PAGE_PATH = "/contact-us";

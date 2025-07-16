@@ -1,3 +1,5 @@
+"use client";
+
 import React, { FC, useMemo } from "react";
 import Section from "../Section";
 import { usePlans } from "@/hooks/use-plans";

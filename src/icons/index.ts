@@ -14,6 +14,17 @@ import CodeIcon from "./CodeIcon";
 import CircleChartIcon from "./CircleChartIcon";
 import RocketIcon from "./RocketIcon";
 import LockIcon from "./LockIcon";
+import StarIcon from "./StarIcon";
+import AndroidIcon from "./AndroidIcon";
+import AppleIcon from "./AppleIcon";
+import WindowsIcon from "./WindowsIcon";
+import MACIcon from "./MACIcon";
+import ImageIcon from "./ImageIcon";
+import ColorPlateIcon from "./ColorPlateIcon";
+import TagIcon from "./TagIcon";
+import PlayIcon from "./PlayIcon";
+import GlobeIcon from "./GlobeIcon";
+import EnvelopeIcon from "./EnvelopeIcon";
 
 export {
   SunFilledIcon,
@@ -32,4 +43,15 @@ export {
   CircleChartIcon,
   RocketIcon,
   LockIcon,
+  StarIcon,
+  AndroidIcon,
+  AppleIcon,
+  WindowsIcon,
+  MACIcon,
+  ImageIcon,
+  ColorPlateIcon,
+  TagIcon,
+  PlayIcon,
+  GlobeIcon,
+  EnvelopeIcon,
 };
