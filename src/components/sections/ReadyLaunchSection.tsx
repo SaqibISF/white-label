@@ -1,3 +1,5 @@
+"use client";
+
 import React, { FC } from "react";
 import Section from "../Section";
 import { Button } from "@heroui/react";

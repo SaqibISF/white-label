@@ -25,6 +25,9 @@ import TagIcon from "./TagIcon";
 import PlayIcon from "./PlayIcon";
 import GlobeIcon from "./GlobeIcon";
 import EnvelopeIcon from "./EnvelopeIcon";
+import EarthIcon from "./EarthIcon";
+import Settings2Icon from "./Settings2Icon";
+import QuestionMarkIcon from "./QuestionMarkIcon";
 
 export {
   SunFilledIcon,
@@ -54,4 +57,7 @@ export {
   PlayIcon,
   GlobeIcon,
   EnvelopeIcon,
+  EarthIcon,
+  Settings2Icon,
+  QuestionMarkIcon,
 };
