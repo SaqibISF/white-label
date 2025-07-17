@@ -28,6 +28,10 @@ import EnvelopeIcon from "./EnvelopeIcon";
 import EarthIcon from "./EarthIcon";
 import Settings2Icon from "./Settings2Icon";
 import QuestionMarkIcon from "./QuestionMarkIcon";
+import PhoneIcon from "./PhoneIcon";
+import LocationPinIcon from "./LocationPinIcon";
+import EyeIcon from "./EyeIcon";
+import EyeSlashIcon from "./EyeSlashIcon";
 
 export {
   SunFilledIcon,
@@ -60,4 +64,8 @@ export {
   EarthIcon,
   Settings2Icon,
   QuestionMarkIcon,
+  PhoneIcon,
+  LocationPinIcon,
+  EyeIcon,
+  EyeSlashIcon,
 };

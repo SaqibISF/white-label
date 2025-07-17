@@ -18,12 +18,12 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import {
   HOME_PAGE_PATH,
   ABOUT_PAGE_PATH,
-  FEATURES_PAGE_PATH,
   WHITE_LABEL_PAGE_PATH,
   PRICING_PAGE_PATH,
   FAQs_PAGE_PATH,
-  LOGIN_PAGE_PATH,
-  SIGNUP_PAGE_PATH,
+  // LOGIN_PAGE_PATH,
+  // SIGNUP_PAGE_PATH,
+  BECOME_A_PARTNER_PAGE_PATH,
 } from "@/lib/pathnames";
 import { usePathname } from "next/navigation";
 import AppLogo from "./AppLogo";
@@ -36,10 +36,6 @@ const Navbar: FC = () => {
     {
       label: "About",
       href: ABOUT_PAGE_PATH,
-    },
-    {
-      label: "Features",
-      href: FEATURES_PAGE_PATH,
     },
     {
       label: "White Label App",
@@ -92,6 +88,16 @@ const Navbar: FC = () => {
 
           <Button
             as={Link}
+            href={BECOME_A_PARTNER_PAGE_PATH}
+            color="primary"
+            radius="full"
+            className="hidden sm:inline-flex"
+          >
+            Become a Partner
+          </Button>
+
+          {/* <Button
+            as={Link}
             href={
               pathname === LOGIN_PAGE_PATH ? SIGNUP_PAGE_PATH : LOGIN_PAGE_PATH
             }
@@ -100,7 +106,7 @@ const Navbar: FC = () => {
             className="hidden sm:inline-flex"
           >
             {pathname === LOGIN_PAGE_PATH ? "Sign Up" : "Login"}
-          </Button>
+          </Button> */}
         </NavbarItem>
         <NavbarMenuToggle className="lg:hidden" />
       </NavbarContent>
@@ -123,6 +129,19 @@ const Navbar: FC = () => {
           <NavbarMenuItem>
             <Button
               as={Link}
+              href={BECOME_A_PARTNER_PAGE_PATH}
+              color="primary"
+              variant="shadow"
+              radius="full"
+              className="w-full sm:hidden"
+            >
+              Become a Partner
+            </Button>
+          </NavbarMenuItem>
+
+          {/* <NavbarMenuItem>
+            <Button
+              as={Link}
               href={
                 pathname === LOGIN_PAGE_PATH
                   ? SIGNUP_PAGE_PATH
@@ -135,7 +154,7 @@ const Navbar: FC = () => {
             >
               {pathname === LOGIN_PAGE_PATH ? "Sign Up" : "Login"}
             </Button>
-          </NavbarMenuItem>
+          </NavbarMenuItem> */}
         </div>
       </NavbarMenu>
     </HeroUINavbar>

@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { FC } from "react";
+import Section from "@/components/Section";
+import LoginCard from "@/components/LoginCard";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+const LoginPage: FC = () => (
+  <Section isHeroSection>
+    <LoginCard />
+  </Section>
+);
 
-export default page
+export default LoginPage;
