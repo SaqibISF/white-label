@@ -20,7 +20,7 @@ const SelectCountry: FC<Omit<AutocompleteProps, "children">> = ({
           width="24px"
           src={`https://flagcdn.com/w40/${countryCode}.png`}
           alt="flag"
-          className="size-6 rounded-xs"
+          className="rounded-xs"
         />
       }
       {...props}
